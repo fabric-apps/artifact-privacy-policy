@@ -1,28 +1,270 @@
 <!DOCTYPE html>
-<html>
-<head><title>Privacy Policy</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConText for LLMs — Privacy Policy</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0d0d0d;
+            font-family: 'JetBrains Mono', monospace;
+            padding: 24px;
+            line-height: 1.6;
+            color: #e4e4e4;
+        }
+
+        .policy-card {
+            max-width: 720px;
+            width: 100%;
+            background: #141414;
+            border: 1px solid rgba(90, 220, 174, 0.12);
+            border-radius: 16px;
+            padding: 48px 44px;
+        }
+
+        .policy-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 6px;
+        }
+
+        .policy-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            flex-shrink: 0;
+        }
+
+        .policy-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #f0f0f0;
+        }
+
+        .policy-subtitle {
+            font-size: 13px;
+            color: #6b6b6b;
+            margin-top: 4px;
+            margin-bottom: 32px;
+            font-weight: 400;
+        }
+
+        .policy-subtitle strong {
+            color: #5ADCAE;
+            font-weight: 700;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #5ADCAE;
+            background: rgba(90, 220, 174, 0.08);
+            padding: 2px 12px;
+            border-radius: 99px;
+            border: 1px solid rgba(90, 220, 174, 0.12);
+            margin-bottom: 22px;
+        }
+
+        .policy-body {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        .policy-body p {
+            font-size: 14px;
+            color: #c8c8c8;
+        }
+
+        .policy-body p strong {
+            color: #f0f0f0;
+            font-weight: 700;
+        }
+
+        .policy-body ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .policy-body ul li {
+            font-size: 14px;
+            color: #c0c0c0;
+            padding-left: 24px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .policy-body ul li::before {
+            content: "▸";
+            position: absolute;
+            left: 2px;
+            color: #5ADCAE;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .policy-body ul li strong {
+            color: #f0f0f0;
+            font-weight: 700;
+        }
+
+        .policy-body ul li code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            background: #1e1e1e;
+            color: #5ADCAE;
+            padding: 1px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(90, 220, 174, 0.10);
+            letter-spacing: 0.01em;
+        }
+
+        .policy-divider {
+            height: 1px;
+            background: rgba(90, 220, 174, 0.10);
+            margin: 6px 0 10px 0;
+        }
+
+        @media (max-width: 560px) {
+            .policy-card {
+                padding: 28px 20px;
+                border-radius: 12px;
+            }
+
+            h1 {
+                font-size: 18px;
+            }
+
+            .policy-header {
+                gap: 10px;
+            }
+
+            .policy-logo {
+                width: 36px;
+                height: 36px;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #141414;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2a2a2a;
+            border-radius: 99px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3a3a3a;
+        }
+    </style>
+</head>
 <body>
-<h1>ConText for LLMs - Privacy Policy</h1>
-<p><strong>Last updated:</strong> June 2026</p>
 
-<p>ConText does not collect, transmit, or store any personal data, browsing history, or user content.</p>
+<div class="policy-card">
 
-<p><strong>What ConText does:</strong></p>
-<ul>
-  <li>Injects a formatting toolbar into <strong>chatgpt.com</strong>, <strong>claude.ai</strong>, <strong>gemini.google.com</strong> for improved prompt composition.</li>
-  <li>Stores <strong>only</strong> your preference for whether the toolbar is enabled or disabled. This is saved locally using Chrome's <code>storage.local</code> API and never transmitted anywhere.</li>
-  <li>Does <strong>not</strong> access, read, or store any conversation content or any data from <strong>chatgpt.com</strong>, <strong>claude.ai</strong>, <strong>gemini.google.com</strong> beyond what is necessary to format the text you manually type into the input field.</li>
-</ul>
+    <div class="policy-header">
+        <div class="policy-logo">
+            <img src="logo.png" alt="ConText">
+        </div>
+        <h1>ConText for LLMs &mdash; Privacy Policy</h1>
+    </div>
 
-<p><strong>Data sharing:</strong> ConText does not share any data with third parties. There are no analytics trackers, no backend servers (in Phase 1), and no external API calls.</p>
+    <div class="policy-subtitle">
+        <strong>Last updated:</strong> June 2026
+    </div>
 
-<p><strong>Permissions:</strong></p>
-<ul>
-  <li><code>storage</code>: Used solely to remember your toolbar preference.</li>
-  <li><code>activeTab</code>: Used to interact with chatgpt.com, claude.ai, gemini.google.com tab when you click the toolbar buttons.</li>
-  <li><code>host_permissions</code> for <strong>chatgpt.com</strong>, <strong>claude.ai</strong>, <strong>gemini.google.com</strong>: Required to inject the toolbar into the page.</li>
-</ul>
+    <span class="badge">🔒 ZERO DATA USED</span>
 
-<p><strong>Contact:</strong> If you have questions, open an issue on our <a href="https://github.com/fabric-apps/context-privacy-policy">GitHub repository</a>.</p>
+    <div class="policy-body">
+
+        <p>
+            <strong>ConText</strong> does <em>not</em> collect, transmit, or store any personal data, 
+            browsing history, or user content. Your privacy is the default.
+        </p>
+
+        <p>
+            <strong>What ConText does:</strong><br>
+            Injects a formatting toolbar into 
+            <strong>chatgpt.com</strong>, <strong>claude.ai</strong>, and <strong>gemini.google.com</strong> 
+            to help you compose better prompts.
+        </p>
+
+        <ul>
+            <li>
+                Stores <strong>only</strong> your preference for whether the toolbar is enabled or disabled. 
+                This is saved locally using Chrome's <code>storage.local</code> API and never transmitted anywhere.
+            </li>
+            <li>
+                Does <strong>not</strong> access, read, or store any conversation content or any data from 
+                <strong>chatgpt.com</strong>, <strong>claude.ai</strong>, or <strong>gemini.google.com</strong> 
+                beyond what is necessary to format the text you manually type into the input field.
+            </li>
+        </ul>
+
+        <div class="policy-divider"></div>
+
+        <p>
+            <strong>Data sharing:</strong> ConText does not share any data with third parties. 
+            There are no analytics trackers, no backend servers (in Phase 1), and no external API calls.
+        </p>
+
+        <p>
+            <strong>Permissions:</strong>
+        </p>
+        <ul>
+            <li><code>storage</code> &mdash; Used solely to remember your toolbar preference.</li>
+            <li><code>activeTab</code> &mdash; Used to interact with the chat tab when you click toolbar buttons.</li>
+            <li>
+                <code>host_permissions</code> for <strong>chatgpt.com</strong>, <strong>claude.ai</strong>, <strong>gemini.google.com</strong> 
+                &mdash; Required to inject the toolbar into the page.
+            </li>
+        </ul>
+
+        <p style="font-size:13px; color:#8a8a8a;">
+            <strong>Contact:</strong> Questions or concerns? Open an issue on our 
+            <a href="https://github.com/fabric-apps/context-privacy-policy" 
+               style="color:#5ADCAE; text-decoration:none; font-weight:700; border-bottom:1px solid rgba(90,220,174,0.15);">
+                GitHub repository
+            </a>.
+        </p>
+
+    </div>
+
+</div>
+
 </body>
 </html>
